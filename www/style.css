@@ -8,19 +8,19 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#startbutton{
+#startbutton {
     background-color: #ef4565;
-    height: 300px;
-    width: 300px;
+    padding: 8%;
     border-radius: 50%;
+    font-weight: bold;
+    font-size: 2.5rem;
     text-align: center;
 }
 
-#starttext, #starttext:visited, #starttext:hover, #starttext:active {
-    line-height: 300px;
-    font-size: 80px;
+#startbutton, #startbutton:visited, #startbutton:hover, #startbutton:active {
     color: white;
     text-decoration: none;
 }
@@ -29,12 +29,14 @@ body{
     margin-top: 5%;
     text-align: center;
     background-color: #3da9fc;
-    width: 100px;
-    height: 80px;
+    width: 15%;
+    padding: 2%;
+    font-size: 1.5rem;
+    font-weight: bold;
     border-radius: 20%;
 }
 
-#sessionhistorytext, #sessionhistorytext:visited, #sessionhistorytext:hover, #sessionhistorytext:active {
+#sessionhistorybutton, #sessionhistorybutton:visited, #sessionhistorybutton:hover, #sessionhistorybutton:active {
     text-decoration: none;
     color: white;
 }
