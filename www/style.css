@@ -1,41 +1,40 @@
+html, body {
+    height: 100%;
+}
+
 body{
-    background-color: gray;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #startbutton{
-    background-color: yellowgreen;
+    background-color: #ef4565;
     height: 300px;
     width: 300px;
     border-radius: 50%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40%;
 }
 
-#starttext {
+#starttext, #starttext:visited, #starttext:hover, #starttext:active {
     line-height: 300px;
     font-size: 80px;
+    color: white;
+    text-decoration: none;
 }
 
 #sessionhistorybutton {
+    margin-top: 5%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: blue;
+    background-color: #3da9fc;
     width: 100px;
     height: 80px;
-    color: white;
     border-radius: 20%;
 }
 
-#sessionhistorytext{
-    line-height: 80px;
-    font-size: 30px;
-}
-
-#startbutton {
-    font-size: 50px;
+#sessionhistorytext, #sessionhistorytext:visited, #sessionhistorytext:hover, #sessionhistorytext:active {
+    text-decoration: none;
     color: white;
-    background-color: purple;
 }
