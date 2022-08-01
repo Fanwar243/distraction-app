@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Timer Page</title>
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <title>Timer Page</title>
+        <link rel="stylesheet" href="style.css">
 
-</head>
-<body>
-    <h1>Welcome to the timer page!</h1>
-    <b>This page will have a stopwatch counting up in the centre and below it a big red button (event listener) that will record the time and time difference between each button click</b>
-    <p>This data needs to be stored somehow - in localstorage? </p>
+    </head>
+    <body>
+        <h1>Welcome to the timer page!</h1>
+        <b>This page will have a stopwatch counting up in the centre and below it a big red button (event listener) that will record the time and time difference between each button click</b>
+        <p>This data needs to be stored somehow - in localstorage? </p>
 
-     <center>
-           <div id="mainstopwatch">
-               <div class="mainTime">
-                   <span id="mainminute">00</span>
-                   <span id="mainsecond">00</span>
-                   <span id="milliseconds">00</span>
+        <centre>
+            <div id="mainstopwatch">
+                <div class="mainTime">
+                    <span id="mainminute">00</span>
+                    <span id="mainsecond">00</span>
+                    <span id="milliseconds">00</span>
+                </div>
+            </div>
+            <br>
+            <button id="start" onclick="start();">Start</button>
+            <button id="stop" onclick="stop();">Stop</button>
+            <button id="reset" onclick="reset();">Reset</button>
+        </centre>
 
-           </div>
-           <br>
-           <button id="start" onclick="start();">Start</button>
-           <button id="stop" onclick="stop();">Stop</button>
-           <button id="reset" onclick="reset();">Reset</button>
-       </center>
-
-
-
-<script src="timer.js"></script>
-</body>
+        <script src="timer.js"></script>
+    </body>
 </html>
