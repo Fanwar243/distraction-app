@@ -44,7 +44,9 @@ function mainTime(){
     let ms = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds;
 
     let foobar = ` ${m} : ${s} : ${ms}`;
+    let history = [];
+    history.push(foobar);
     timerRef.innerHTML = foobar;
 
-    localStorage.setItem("0", foobar);
+    localStorage.setItem("List", history);
 }
