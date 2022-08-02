@@ -21,10 +21,6 @@ document.getElementById('start').addEventListener('click', ()=>{
 
 document.getElementById('stop').addEventListener('click', ()=>{
     clearInterval(int);
-});
-
-document.getElementById('reset').addEventListener('click', ()=>{
-    clearInterval(int);
     [milliseconds,seconds,minutes,hours] = [0,0,0];
     timerRef.innerHTML = '00 : 00 : 00';
 });
