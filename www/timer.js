@@ -13,7 +13,7 @@ let timerRef = document.querySelector('.mainTime');
 let int = null;
 
 document.getElementById('start').addEventListener('click', ()=>{
-    if(int!==null){
+    if(int !== null) {
         clearInterval(int);
     }
     int = setInterval(mainTime,10);
@@ -43,9 +43,12 @@ function mainTime(){
         }
     }
 
- let m = minute < 10 ? "0" + minute : minute;
- let s = second < 10 ? "0" + second : second;
- let ms = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds;
+    let m = minute < 10 ? "0" + minute : minute;
+    let s = second < 10 ? "0" + second : second;
+    let ms = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds;
 
- timerRef.innerHTML = ` ${m} : ${s} : ${ms}`;
+    let foobar = ` ${m} : ${s} : ${ms}`;
+    timerRef.innerHTML = foobar;
+
+    localStorage.setItem("0", foobar);
 }
