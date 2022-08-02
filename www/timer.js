@@ -43,7 +43,7 @@ function mainTime(){
     let s = second < 10 ? "0" + second : second;
     let ms = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds;
 
-    let foobar = ` ${m} : ${s} : ${ms}`;
+    let foobar = `${m}:${s}:${ms}`;
     let history = [];
     history.push(foobar);
     timerRef.innerHTML = foobar;
