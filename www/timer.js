@@ -25,7 +25,7 @@ document.getElementById('stop').addEventListener('click', ()=>{
     timerRef.innerHTML = '00 : 00 : 00';
 });
 
-function mainTime(){
+function mainTime() {
     milliseconds+=10;
     if(milliseconds == 1000){
         milliseconds = 0;
@@ -46,6 +46,6 @@ function mainTime(){
     let foobar = `${m}:${s}:${ms}`;
 
     timerRef.innerHTML = foobar;
-
-    localStorage.setItem("List", foobar);
+    
+    localStorage.setItem(`${localStorage.length}`, foobar);
 }
